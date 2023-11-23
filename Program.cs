@@ -14,16 +14,12 @@ double[,] B =
 
 try
 {
-    double[,] C = MatrixMultiply(A, B);
+    { 1, 2, 3 }, 
     for (int i = 0; i < C.GetLength(0); i++)
     {
         for (int j = 0; j < C.GetLength(1); j++) Console.Write(C[i, j] + " ");
         Console.WriteLine();
     }
-}
-catch(Exception) { }
-
-
 
 double[,] MatrixMultiply(double[,] A, double[,] B)
 {
